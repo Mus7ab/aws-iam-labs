@@ -14,35 +14,35 @@ Create an IAM user with AWS Management Console access and understand how IAM use
 * Enabled MFA on the IAM user
 * Successfully logged in using the IAM user
 * Reviewed IAM Dashboard and account sign-in URL
+* Switched daily administration from Root User to IAM User
 
 ## Evidence
 
-Screenshots are stored in the `screenshots/` folder.
-
 ### IAM Dashboard
 
-![IAM Dashboard](screenshots/01-iam-dashboard.png)
+![IAM Dashboard](screenshots/01-iam-dashboard.png.png)
 
-### IAM User Details
+### IAM Admin User
 
-![IAM User Details](screenshots/02-iam-admin-user.png)
+![IAM Admin User](screenshots/02-iam-admin-user.png.png)
 
 ### AdministratorAccess Policy
 
-![AdministratorAccess Policy](screenshots/03-admin-permissions.png)
+![AdministratorAccess Policy](screenshots/03-admin-permissions.png.png)
 
 ### MFA Enabled
 
-![MFA Enabled](screenshots/04-mfa-enabled.png)
+![MFA Enabled](screenshots/04-mfa-enabled.png.png)
 
 ## Key Learning
 
-* IAM users provide individual identities for AWS access.
-* MFA should be enabled for privileged accounts.
-* The Root User should not be used for daily administration.
-* Permissions can be assigned through policies and groups.
-* AdministratorAccess grants full administrative permissions across AWS services.
+* IAM users provide individual identities for accessing AWS resources.
+* Multi-Factor Authentication (MFA) should be enabled for privileged accounts.
+* The Root User should only be used for account-level tasks.
+* Permissions can be granted using IAM policies.
+* AdministratorAccess provides full administrative permissions across AWS services.
+* Following AWS security best practices improves account protection.
 
 ## Result
 
-An IAM Administrator user was created and secured with MFA, providing a safer alternative to daily use of the Root User account.
+Successfully created and secured an IAM Administrator user with AWS Management Console access and MFA. This user is now used for daily AWS administration instead of the Root User, following AWS security best practices.
